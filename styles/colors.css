@@ -1,0 +1,30 @@
+.color-primary{
+    color: var(--color-primary);
+}
+.color-grey-1{
+    color: var(--color-grey-1);
+}
+.color-grey-2{
+    color: var(--color-grey-2);
+}
+.color-grey-3{
+    color: var(--color-grey-3);
+}
+.color-grey-4{
+    color: var(--color-grey-4);
+}
+.bgc-primary{
+    background-color: var(--color-primary);
+}
+.bgc-grey-1{
+    background-color: var(--color-grey-1);
+}
+.bgc-grey-2{
+    background-color: var(--color-grey-2);
+}
+.bgc-grey-3{
+    background-color: var(--color-grey-3);
+}
+.bgc-grey-4{
+    background-color: var(--color-grey-4);
+}

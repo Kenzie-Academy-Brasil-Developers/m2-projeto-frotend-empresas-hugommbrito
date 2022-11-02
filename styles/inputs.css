@@ -1,0 +1,20 @@
+.input-default{
+    height: var(--size-1);
+    width: 100%;
+    border-radius: var(--radius-1);
+    background-color: var(--color-white);
+    padding: 0 var(--gap-5);
+    font-size: var(--font-text-1);
+    border: 3px solid var(--color-grey-3);
+}
+.input-default:hover{
+    background-color: var(--color-primary-transparent);
+    color: var(--color-grey-2)
+}
+
+.input-default:focus{
+    outline: none;
+    background-color: var(--color-primary-transparent);
+    color: var(--color-grey-2);
+    border: 3px solid var(--color-primary);
+}
