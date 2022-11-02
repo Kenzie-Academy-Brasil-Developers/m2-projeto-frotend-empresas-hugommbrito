@@ -15,37 +15,240 @@
     <link rel="stylesheet" href="../../styles/margins.css">
     <link rel="stylesheet" href="../../styles/menu.css">
     <link rel="stylesheet" href="../../styles/position.css">
+    <link rel="stylesheet" href="../../styles/logo.css">
+    <link rel="stylesheet" href="../../styles/dialog.css">
     <!-- Page -->
     <link rel="stylesheet" href="./style.css">
 
-    <title>Documentação</title>
+    <title>Kenzie Empresas - Admin Dashboard</title>
     <meta name="description" content="Home Website">
     <link rel="shortcut icon" href="../../assets/img/favicons/favicon.jpeg" 
     type="image/x-icon">
 </head>
 <body>
     <header class="menu">
-        <h2>Title</h2>
-        <ul>
-            <li>menu 1</li>
-            <li>menu 2</li>
-            <li>menu 3</li>
-        </ul>
+        <div class="logo flex align-center gap-7">
+            <div class="bgc-primary-transp"></div>
+            <p class="font-16-700">Kenzie Empresas</p>
+        </div>
+        <button class="btn-primary-1">Logout</button>
     </header>
-    <main class="container">
-        <h1 class="font-title-1 mb-1 mt-1">Heading1</h1>
-        <h2 class="font-title-2 mb-1">Heading2</h2>
-        <h3 class="font-title-3 mb-1">Heading3</h3>
-        <h4 class="font-title-4 mb-1">Heading4</h4>
-        <p class="font-text-1 mb-1">Parahraph</p>
-        <p class="font-text-2 mb-1">Body</p>
-        <p class="font-text-3 mb-1">Details</p>
-        <input class="input-default mb-1" placeholder="Placeholder" type="text">
-        <button class="btn-mail"></button>
-        <button class="btn-primary-2">Button Text</button>
-        <button class="btn-grey-1">Button Text</button>
-        <button class="btn-white">Button Text</button>
-        <button class="btn-outline">Button Text</button>
+    <main class="">
+        <section id="dpmts" class="container-desk">
+            <div id="dpmtsTop">
+                <h2 class="font-32-700">Departamentos</h2>
+                <select name="selectCompany" id="selectCompany">
+                    <option value="empresa1">selecionar empresa</option>
+                    <option value="empresa1">empresa1</option>
+                    <option value="empresa2">empresa2</option>
+                    <option value="empresa3">empresa3</option>
+                    <option value="empresa4">empresa4</option>
+                </select>
+                <button class="btn-primary-2">+ Criar</button>
+            </div>
+            <div id="dpmtsList">
+                <div id="dpmtCard">
+                    <p class="font-20-700">Department Name</p>
+                    <p class="font-18-400">Department Description</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-eye"></button>
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="dpmtCard">
+                    <p class="font-20-700">Department Name</p>
+                    <p class="font-18-400">Department Description</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-eye"></button>
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="dpmtCard">
+                    <p class="font-20-700">Department Name</p>
+                    <p class="font-18-400">Department Description</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-eye"></button>
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="dpmtCard">
+                    <p class="font-20-700">Department Name</p>
+                    <p class="font-18-400">Department Description</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-eye"></button>
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="dpmtCard">
+                    <p class="font-20-700">Department Name</p>
+                    <p class="font-18-400">Department Description</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-eye"></button>
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="users" class="container-desk">
+            <div id="usersTop">
+                <h2 class="font-32-700">Usuários Cadastrados</h2>
+            </div>
+            <div id="usersList">
+                <div id="userCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="userCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="userCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="userCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+                <div id="userCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <div id="cardBtns">
+                        <button class="btn-pen"></button>
+                        <button class="btn-bin"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <dialog>
+            <button class="btn-close"></button>
+
+            <!-- MODAL VISUALIZAR DPTO -->
+            <!-- <h2 class="font-32-700">Nome do departamento</h2>
+            <div id="modalEditTop">
+                <div id="modalEditCompanyInfo">
+                    <p class="font-20-700">Descrição do Departamento</p>
+                    <p class="font-18-400">Empresa Pertencente</p>
+                </div>
+                <div id="ModalEditUserSelect">
+                    <select name="" id="" class="input-default">
+                        <option value="">User 01</option>
+                    </select>
+                    <button class="btn-green">Contratar</button>
+                </div>
+            </div>
+            <div id="modalEditUsersContainer">
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+                <div id="modalEditUserCard">
+                    <p class="font-20-700">Username</p>
+                    <p class="font-18-400">Pleno</p>
+                    <p class="font-18-400">Company Name</p>
+                    <button class="btn-red">Desligar</button>
+                </div>
+            </div> -->
+            
+            <!-- MODAL CRIAR DPTO -->
+            <!-- <h2 class="font-32-700">Criar Departamento</h2>
+            <input type="text" class="input-default" placeholder="Nome do departamento">
+            <input type="text" class="input-default" placeholder="Descrição">
+            <select name="" id="" class="input-default">
+                <option value="">Selecionar Empresa</option>
+            </select>
+            <button class="btn-primary-2">Criar o departamento</button> -->
+        
+            <!-- MODAL EDITAR DEPARTAMENTO -->
+            <!-- <h2 class="font-32-700">Editar Departamento</h2>
+            <input type="text" class="input-default" placeholder="Valor anterior de Descrição">
+            <button class="btn-primary-2">Criar o departamento</button> -->
+
+            <!-- MODAL CONFIRMAR DELETAR DEPARTAMENTO -->
+            <!-- <div id="modalConfirmDeletDpmt">
+                <p class="font-28-700">Realmente deseja deletar o Departamento NOME e demmitir seus funcionários?</p>
+                <button class="btn-green">Confirmar</button>
+            </div> -->
+        
+            <!-- MODAL PARA EDITAR USUÁRIO -->
+            <!-- <h2 class="font-32-700">Editar Usuário</h2>
+            <select class="input-default" name="" id="">
+                <option value="">Selecionar modalidade de Trabalho</option>
+            </select>
+            <select class="input-default" name="" id="">
+                <option value="">Selecionar Nível Profissional</option>
+            </select>
+            <button class="btn-primary-2">Editar</button> -->
+
+            <!-- MODAL CONFIRMAR DELETAR USUÁRIO -->
+            <!-- <div id="modalConfirmDeletDpmt">
+                <p class="font-28-700">Realmente deseja remover o usuário NOME?</p>
+                <button class="btn-green">Confirmar</button>
+            </div> -->
+        </dialog>
     </main>
 
 

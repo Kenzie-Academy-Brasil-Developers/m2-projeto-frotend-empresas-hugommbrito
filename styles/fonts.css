@@ -1,31 +1,46 @@
-.title-1{
-    font-size: var(--font-title-1);
-    font-weight: var(--font-weight-1);
+.font-40-700{
+    font-size: var(--font-9);
+    font-weight: var(--font-weight-7);
 }
-.title-2{
-    font-size: var(--font-title-2);
-    font-weight: var(--font-weight-1);
+
+.font-36-700{
+    font-size: var(--font-8);
+    font-weight: var(--font-weight-7);
 }
-.title-3{
-    font-size: var(--font-title-3);
-    font-weight: var(--font-weight-1);
+
+.font-32-700{
+    font-size: var(--font-7);
+    font-weight: var(--font-weight-7);
 }
-.title-4{
-    font-size: var(--font-title-4);
-    font-weight: var(--font-weight-1);
+
+.font-28-700{
+    font-size: var(--font-6);
+    font-weight: var(--font-weight-7);
 }
-.text-1{
-    font-size: var(--font-text-1);
-    font-weight: var(--font-weight-3);
+
+.font-20-400{
+    font-size: var(--font-5);
+    font-weight: var(--font-weight-4);
 }
-.text-2{
-    font-size: var(--font-text-2);
-    font-weight: var(--font-weight-3);
+.font-20-700{
+    font-size: var(--font-5);
+    font-weight: var(--font-weight-7);
 }
-.text-3{
-    font-size: var(--font-text-3);
-    font-weight: var(--font-weight-3);
+
+.font-18-400{
+    font-size: var(--font-4);
+    font-weight: var(--font-weight-4);
 }
+
+.font-16-400{
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-4);
+}
+.font-16-700{
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-7);
+}
+
 a{
     text-decoration: none;
     color: var(--color-grey-5)

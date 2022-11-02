@@ -1,0 +1,130 @@
+header{
+    border-bottom: 1px solid var(--color-grey-5);
+    margin-bottom: 24px;
+}
+
+#dpmtsTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+#dpmtsTop > select{
+    width: 20vw;
+    height: 24px;
+    border-radius: 16px;
+}
+
+#dpmtsList, #usersList{
+    height: 40vh;
+    padding: 34px 56px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 28px;
+
+
+    background-color: var(--color-grey-5);
+
+    overflow-y: auto;
+}
+
+#dpmtsList > #dpmtCard, #usersList > #userCard{
+    width: 45%;
+    height: 25vh;
+    padding: 18px 30px;
+    
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-primary);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dpmtsList > #dpmtCard > #cardBtns, #usersList > #userCard > #cardBtns{
+    display:flex ;
+    justify-content: center;
+    gap: var(--gap-6);
+}
+
+#usersTop{
+    text-align: center;
+    margin: 69px 0 16px 0;
+}
+
+#dpmtsList::-webkit-scrollbar, #usersList::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-primary);
+}
+
+
+
+
+
+/* MODAIS */
+#modalEditTop{
+    display: flex;
+    gap: var(--gap-1);
+}
+#modalEditCompanyInfo, #ModalEditUserSelect{
+    width: 30vw;
+}
+#ModalEditUserSelect > select{
+    height: var(--size-3);
+    margin-bottom: 5px;
+}
+#modalEditUsersContainer{
+    height: 30vh;
+    width: 100%;
+    padding: 16px 18px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 28px;
+
+
+    background-color: var(--color-grey-5);
+
+    overflow-x: auto;
+}
+#modalEditUserCard{
+    height: 20vh;
+    padding: 18px 30px;
+    
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-primary);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex-shrink: 0;
+}
+#modalEditUsersContainer::-webkit-scrollbar{
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-primary);
+}
+
+dialog > .btn-primary-2{
+    width: 100%;
+}
+
+#modalConfirmDeletDpmt{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-1);
+}
+#modalConfirmDeletDpmt > .font-28-700{
+    text-align: center;
+}

@@ -16,7 +16,7 @@
 }
 
 .flex-center{
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -24,6 +24,9 @@
     flex-wrap: wrap;
 }
 
+.hide{
+    display: none;
+}
 
 
 

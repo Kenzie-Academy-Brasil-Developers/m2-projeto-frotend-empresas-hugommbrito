@@ -15,37 +15,43 @@
     <link rel="stylesheet" href="../../styles/margins.css">
     <link rel="stylesheet" href="../../styles/menu.css">
     <link rel="stylesheet" href="../../styles/position.css">
+    <link rel="stylesheet" href="../../styles/headerHome.css">
+    <link rel="stylesheet" href="../../styles/logo.css">
     <!-- Page -->
     <link rel="stylesheet" href="./style.css">
 
-    <title>Documentação</title>
+    <title>Kenzie Empresas - Login</title>
     <meta name="description" content="Home Website">
     <link rel="shortcut icon" href="../../assets/img/favicons/favicon.jpeg" 
     type="image/x-icon">
 </head>
 <body>
-    <header class="menu">
-        <h2>Title</h2>
-        <ul>
-            <li>menu 1</li>
-            <li>menu 2</li>
-            <li>menu 3</li>
-        </ul>
+    <header>
+        <div class="container-mob">
+            <div class=" flex spc-btwn align-center mt-4 mb-4">
+                <div class="logo flex align-center gap-7">
+                    <div class="bgc-primary-transp"></div>
+                    <p class="font-16-700">Kenzie Empresas</p>
+                </div>
+                <button class="btn-menu"></button>
+            </div>
+            <div class="drop-menu flex spc-btwn hide">
+                <button class="btn-primary-1">Login</button>
+                <button class="btn-primary-2">Cadastro</button>
+            </div>
+        </div>
     </header>
-    <main class="container">
-        <h1 class="font-title-1 mb-1 mt-1">Heading1</h1>
-        <h2 class="font-title-2 mb-1">Heading2</h2>
-        <h3 class="font-title-3 mb-1">Heading3</h3>
-        <h4 class="font-title-4 mb-1">Heading4</h4>
-        <p class="font-text-1 mb-1">Parahraph</p>
-        <p class="font-text-2 mb-1">Body</p>
-        <p class="font-text-3 mb-1">Details</p>
-        <input class="input-default mb-1" placeholder="Placeholder" type="text">
-        <button class="btn-mail"></button>
-        <button class="btn-primary-2">Button Text</button>
-        <button class="btn-grey-1">Button Text</button>
-        <button class="btn-white">Button Text</button>
-        <button class="btn-outline">Button Text</button>
+    <main class="">
+        <div class="frame">
+            <h2 class="font-32-700">Login</h2>
+            <p class="font-18-400">Preencha os campos para realizar login</p>
+            <input type="email" class="input-default" id="email" placeholder="Seu e-mail">
+            <input type="passqord" class="input-default" id="password" placeholder="Sua senha">
+            <button class="btn-primary-2">Login</button>
+            <p class="font-18-400">ou</p>
+            <button class="btn-primary-1">Cadastre-se</button>
+
+        </div>
     </main>
 
 

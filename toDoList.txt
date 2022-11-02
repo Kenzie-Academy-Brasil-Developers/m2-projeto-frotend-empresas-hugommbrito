@@ -2,51 +2,53 @@
 ✅   1 - Baixar Repositórios
 ✅       I - Da Aplicação e fundir o scaffold
 ✅       II - Da API e instalar no insomnia
-⬜   2 - Ajustar o scaffold 
-⬜       I - Pastas e Arquivos
-⬜       II - Cores
-⬜       III - Botões
-⬜       IV - Fonts
-⬜   3 - Criar estrutura HTML
-⬜       I - Página Inicial
-⬜       II - Página de Autenticação
-⬜       III - Página de Cadastro
-⬜       IV - Página Painel de Controle
-⬜           a - Painel de Controle de ADMIN
-⬜           b - Painel de controle de Usuário
-⬜   3 - Estilização CSS
-⬜       I - Página Inicial
-⬜           a - Mobile
-⬜           b - Desktop
-⬜       II - Página de Cadastro
-⬜           a - Mobile
-⬜           b - Desktop
-⬜       III - Página de Autenticação
-⬜           a - Mobile
-⬜           b - Desktop
-⬜       IV - Página Painel de Controle
-⬜           a - Painel de Controle de ADMIN
-⬜           b - Painel de controle de Usuário
-⬜   4 - Kógica da Home Page
-⬜       I - Redirecionamento para Cadastro
-⬜       II - Redirecionamento para Login
+✅   2 - Ajustar o scaffold 
+✅       I - Pastas e Arquivos
+✅       II - Cores
+✅       III - Botões
+✅       IV - Fonts
+✅   3 - Criar estrutura HTML
+✅       I - Página Inicial
+✅       II - Página de Autenticação
+✅       III - Página de Cadastro
+✅       IV - Página Painel de Controle
+✅           a - Painel de Controle de ADMIN
+✅           b - Painel de controle de Usuário
+✅           c - Modais
+✅   4 - Estilização CSS
+✅       I - Página Inicial
+✅           a - Mobile
+✅           b - Desktop
+✅       II - Página de Cadastro
+✅           a - Mobile
+✅           b - Desktop
+✅       III - Página de Autenticação
+✅           a - Mobile
+✅           b - Desktop
+✅       IV - Página Painel de Controle
+✅           a - Painel de Controle de ADMIN
+✅           b - Painel de controle de Usuário
+✅           c - Modais
+⬜   5 - Lógica da Home Page
+✅       I - Redirecionamento para Cadastro
+✅       II - Redirecionamento para Login
 ⬜       III - Renderizar uma lista com todas as empresas cadastradas (Request API)
 ⬜       IV - Importar lista de setores para menu seletor (Request API)
 ⬜       V - Filtrar empresas por setor selecionado
 ⬜       VI - Sem restrições, qualquer uim pode entrar nessa Página
-⬜   5 - Lógica do Cadastro
+⬜   6 - Lógica do Cadastro
 ⬜       I - Criar formulário com botão de cadastro (Request API)
 ⬜       II - Ao cadastrar, retornar para a pg Login
 ⬜       III - Botão de Retornar, para a pg de Login
 ⬜       IV - Em caso de erro na requisição, retornar toasty de erro
-⬜   6 - Lógica Pg Autenticação (Login)
+⬜   7 - Lógica Pg Autenticação (Login)
 ⬜       I - Fazer requisição de Login (Request API)
 ⬜           a - Guardar Token e info de Admin? no LocalStorage
 ⬜           b - Redireciona para o DashBoard correto (Usuário ou Admin)
 ⬜       II - Botão para redirecionar p. Cadastro
 ⬜       III - Em caso de erro, mostrar toasty com o retorno da API
 ⬜       IV - Os dashboards devem encaminhar para o login caso não esteja logado
-⬜   7 - Lógica Painel de Controle ADMINISTRADOR / Seção Departamentos
+⬜   8 - Lógica Painel de Controle ADMINISTRADOR / Seção Departamentos
 ⬜       I - Formulário para cadastrar depto em uma empresa específica
 ⬜           a - Toasty para indicar sucesso/erro
 ⬜       II - Criar filtro para Listar todos os Departamentos de uma empresa específica (Request API)
@@ -62,7 +64,7 @@
 ⬜       V - Lógica para DELETAR Dpto (Request API)
 ⬜           a - Pop-up de confirmação
 ⬜       VI - Ao clicar no botão de logout, remove as informações do usuário do localStorage e redireciona para a HomePage
-⬜   8 - Lógica Painel de Controle ADMINISTRADOR / Seção Usuários
+⬜   9 - Lógica Painel de Controle ADMINISTRADOR / Seção Usuários
 ⬜       I - Lógica para alterar modalidade de trabalho (Request API)
 ⬜           a - Home Office - Presencial - Híbrido
 ⬜       II - Modificar Cargo (Request API)
@@ -70,7 +72,7 @@
 ⬜       III - Mostrar TODOS os usuários cadastrados na API (Request API)
 ⬜           a - Mostrar dados dos usuários: username, email, cargo e modalidade de trabalho
 ⬜           b - Caso a modalidade ou o cargo sejam nulos, não demostra o dado na tela.
-⬜   9 - Lógica painel de controle de USUÁRIO COMUM
+⬜   10 - Lógica painel de controle de USUÁRIO COMUM
 ⬜       I - Mostrar APENAS Colegas de Empresa/Departamento (Request API)
 ⬜       II - Alterar suas próprias informações (password, email e username)
 ⬜       III - Mostrar mensagem quando não houver contratação
@@ -79,7 +81,7 @@
 
 
 
-=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~   C H E C A G E N S   =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~==~   C H E C A G E N S   =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
 
 ⬜   Redirecionamento entre as páginas
         --É possível se redirecionar para as páginas com botões no header, como demonstrado no figma.

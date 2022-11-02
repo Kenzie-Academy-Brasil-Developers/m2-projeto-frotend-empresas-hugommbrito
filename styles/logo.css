@@ -1,0 +1,10 @@
+.logo > div{
+    height: 12px;
+    width: 12px;
+    
+    border-radius: var(--radius-2);
+}
+
+.logo > p{
+    font-family: 'Poppins', sans-serif;
+}

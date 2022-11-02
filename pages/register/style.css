@@ -1,0 +1,35 @@
+main{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('../../assets/img/Pages/loginPage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 30px;
+}
+
+.frame{
+    width: 100vw;
+    height: 480px;
+
+    padding: 40px 20px;
+
+    background-color: #fffffff1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-primary-1, .btn-primary-2{
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .frame{
+        width: 500px;
+        margin: 0 auto;
+    }
+}

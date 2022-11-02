@@ -1,0 +1,21 @@
+dialog{
+    margin: 100px auto;
+
+    min-width: 40vw;
+    max-width: 70vw;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border: none;
+
+    position: relative;
+}
+
+dialog > .btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

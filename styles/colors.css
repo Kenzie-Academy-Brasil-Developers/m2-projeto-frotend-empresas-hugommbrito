@@ -13,8 +13,20 @@
 .color-grey-4{
     color: var(--color-grey-4);
 }
+.color-white{
+    color: var(--color-white);
+}
+.color-error{
+    color: var(--color-error);
+}
+.color-success{
+    color: var(--color-success);
+}
 .bgc-primary{
     background-color: var(--color-primary);
+}
+.bgc-primary-transp{
+    background-color: var(--color-primary-transparent);
 }
 .bgc-grey-1{
     background-color: var(--color-grey-1);
@@ -27,4 +39,13 @@
 }
 .bgc-grey-4{
     background-color: var(--color-grey-4);
+}
+.bgc-white{
+    background-color: var(--color-white);
+}
+.bgc-error{
+    background-color: var(--color-error);
+}
+.bgc-success{
+    background-color: var(--color-success);
 }

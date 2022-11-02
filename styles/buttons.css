@@ -1,125 +1,208 @@
 .btn-primary-1{
-    height: var(--size-1);
+    height: var(--size-2);
     width: max-content;
     padding: 0 var(--gap-1);
 
-    font-weight: var(--font-weight-1);
-    font-size: var(--font-text-1);
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-4);
 
-    background-color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    color: var(--color-grey-4);
-    border-radius: var(--radius-2);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: none;
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 0.5s;
 }
 .btn-primary-1:hover{
-    background-color: var(--color-secondary);
-    border-color: var(--color-primary)
+    transform: scale(1.05);
+}
+
+.tag-primary-1{
+    height: var(--size-2);
+    width: max-content;
+    padding: 0 var(--gap-1);
+
+    font-weight: var(--font-weight-4);
+    font-size: var(--font-3);
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 1.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-primary-2{
-    height: var(--size-3);
+    height: var(--size-2);
     width: max-content;
-    padding: 0 var(--gap-3);
+    padding: 0 var(--gap-1);
 
-    font-weight: var(--font-weight-1);
-    font-size: var(--font-text-1);
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-4);
 
     background-color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    color: var(--color-grey-4);
-    border-radius: var(--radius-2);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+    border-radius: none;
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    transition: 0.5s;
 }
 .btn-primary-2:hover{
-    background-color: var(--color-secondary);
-    border-color: var(--color-primary)
+    transform: scale(1.05);
 }
 
-.btn-grey-1{
-    height: var(--size-1);
+.btn-green{
+    height: var(--size-3);
     width: max-content;
     padding: 0 var(--gap-1);
 
-    font-weight: var(--font-weight-1);
-    font-size: var(--font-text-1);
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-4);
 
-    background-color: var(--color-grey-3);
-    border: 2px solid var(--color-grey-3);
-    color: var(--color-grey-1);
-    border-radius: var(--radius-2);
+    background-color: var(--color-success);
+    border: 1px solid var(--color-success);
+    color: var(--color-white);
+    border-radius: none;
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    transition: 0.5s;
+}
+.btn-green:hover{
+    transform: scale(1.05);
 }
 
-.btn-grey-1:hover{
-    background-color: var(--color-grey-1);
-    border: 2px solid var(--color-grey-1);
-    color: var(--color-grey-4);
-}
-
-.btn-white{
-    height: var(--size-1);
+.btn-red{
+    height: var(--size-2);
     width: max-content;
     padding: 0 var(--gap-1);
 
-    font-weight: var(--font-weight-1);
-    font-size: var(--font-text-1);
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-4);
 
     background-color: var(--color-white);
-    border: 2px solid var(--color-white);
-    color: var(--color-grey-1);
-    border-radius: var(--radius-2);
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
+    border-radius: none;
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    transition: 0.5s;
+}
+.btn-red:hover{
+    transform: scale(1.05);
 }
 
-.btn-white:hover{
-    background-color: var(--color-grey-4);
-    border: 2px solid var(--color-grey-4);
-}
-
-.btn-outline{
-    height: var(--size-1);
-    width: max-content;
-    padding: 0 var(--gap-1);
-
-    font-weight: var(--font-weight-1);
-    font-size: var(--font-text-1);
-
-    background-color: var(--color-white);
-    border: 3px solid var(--color-grey-1);
-    color: var(--color-grey-1);
-    border-radius: var(--radius-2);
+.btn-eye{
+    height: var(--gap-2);
+    width: var(--size-2);
+    
+    background-image: url('../assets/img/buttons/eye.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    
+    border: none;
     cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    transition: 0.5s;
+}
+.btn-eye:hover{
+    background-image: url('../assets/img/buttons/eye-hover.png');
+    
+    transform: scale(1.05);
 }
 
-.btn-outline:hover{
-    background-color: var(--color-primary-transparent);
-    border: 3px solid var(--color-primary);
-    color: var(--color-primary);
+.btn-pen{
+    height: var(--gap-2);
+    width: var(--size-2);
+    
+    background-image: url('../assets/img/buttons/pen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    
+    border: none;
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+.btn-pen:hover{
+    background-image: url('../assets/img/buttons/pen-hover.png');
+    
+    transform: scale(1.05);
 }
 
-.btn-outline:focus, .btn-outline-active{
-    background-color: var(--color-primary);
-    border: 3px solid var(--color-primary);
-    color: var(--color-grey-4);
+.btn-bin{
+    height: var(--gap-2);
+    width: var(--size-2);
+    
+    background-image: url('../assets/img/buttons/bin.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    
+    border: none;
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+.btn-bin:hover{
+    background-image: url('../assets/img/buttons/bin-hover.png');
+    
+    transform: scale(1.05);
+}
+
+.btn-close{
+    height: var(--gap-5);
+    width: var(--gap-5);
+    
+    background-image: url('../assets/img/buttons/close.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    
+    border: none;
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+
+.btn-menu{
+    height: var(--gap-5);
+    width: var(--gap-3);
+    
+    background-image: url('../assets/img/buttons/menu.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    
+    border: none;
+    cursor: pointer;
+    
+    transition: 0.5s;
 }
