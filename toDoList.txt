@@ -29,26 +29,30 @@
 ✅           a - Painel de Controle de ADMIN
 ✅           b - Painel de controle de Usuário
 ✅           c - Modais
-⬜   5 - Lógica da Home Page
+✅   5 - Lógica da Home Page
 ✅       I - Redirecionamento para Cadastro
 ✅       II - Redirecionamento para Login
-⬜       III - Renderizar uma lista com todas as empresas cadastradas (Request API)
-⬜       IV - Importar lista de setores para menu seletor (Request API)
-⬜       V - Filtrar empresas por setor selecionado
-⬜       VI - Sem restrições, qualquer uim pode entrar nessa Página
-⬜   6 - Lógica do Cadastro
-⬜       I - Criar formulário com botão de cadastro (Request API)
-⬜       II - Ao cadastrar, retornar para a pg Login
-⬜       III - Botão de Retornar, para a pg de Login
-⬜       IV - Em caso de erro na requisição, retornar toasty de erro
-⬜   7 - Lógica Pg Autenticação (Login)
-⬜       I - Fazer requisição de Login (Request API)
-⬜           a - Guardar Token e info de Admin? no LocalStorage
-⬜           b - Redireciona para o DashBoard correto (Usuário ou Admin)
-⬜       II - Botão para redirecionar p. Cadastro
-⬜       III - Em caso de erro, mostrar toasty com o retorno da API
-⬜       IV - Os dashboards devem encaminhar para o login caso não esteja logado
+✅       III - Renderizar uma lista com todas as empresas cadastradas (Request API)
+✅       IV - Importar lista de setores para menu seletor (Request API)
+✅       V - Filtrar empresas por setor selecionado
+✅       VI - Sem restrições, qualquer uim pode entrar nessa Página
+✅       VII - Lógica para abrir menu sanduiche no mobile
+✅   6 - Lógica do Cadastro
+✅       I - Criar formulário com botão de cadastro (Request API)
+✅       II - Ao cadastrar, retornar para a pg Login
+✅       III - Botão de Retornar, para a pg de Login
+✅       IV - Em caso de erro na requisição, retornar toasty de erro
+✅       V - Lógica para abrir menu sanduiche no mobile
+✅   7 - Lógica Pg Autenticação (Login)
+✅       I - Fazer requisição de Login (Request API)
+✅           a - Guardar Token e info de Admin? no LocalStorage
+✅           b - Redireciona para o DashBoard correto (Usuário ou Admin)
+✅       II - Botão para redirecionar p. Cadastro
+✅       III - Em caso de erro, mostrar toasty com o retorno da API
+✅       IV - Os dashboards devem encaminhar para o login caso não esteja logado
+✅       V - Lógica para abrir menu sanduiche no mobile
 ⬜   8 - Lógica Painel de Controle ADMINISTRADOR / Seção Departamentos
+⬜       I - Renderizar todos os departamentos (sem filtros) (request API)
 ⬜       I - Formulário para cadastrar depto em uma empresa específica
 ⬜           a - Toasty para indicar sucesso/erro
 ⬜       II - Criar filtro para Listar todos os Departamentos de uma empresa específica (Request API)

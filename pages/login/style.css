@@ -14,13 +14,13 @@ main{
     width: 100vw;
     height: 480px;
 
-    padding: 40px 20px;
+    padding: 40px 40px;
 
     background-color: #fffffff1;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .btn-primary-1, .btn-primary-2{

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../styles/position.css">
     <link rel="stylesheet" href="../../styles/headerHome.css">
     <link rel="stylesheet" href="../../styles/logo.css">
+    <link rel="stylesheet" href="../../styles/toasty.css">
     <!-- Page -->
     <link rel="stylesheet" href="./style.css">
 
@@ -36,8 +37,8 @@
                 <button class="btn-menu"></button>
             </div>
             <div class="drop-menu flex spc-btwn hide">
-                <button class="btn-primary-1">Login</button>
-                <button class="btn-primary-2">Cadastro</button>
+                <a href="../../index.html" class="btn-primary-1">Home</a>
+                <a href="../login/index.html" class="btn-primary-2">Login</a>
             </div>
         </div>
     </header>
@@ -46,15 +47,15 @@
             <h2 class="font-32-700">Cadastre-se</h2>
             <input type="text" class="input-default" id="name" placeholder="Seu nome">
             <input type="email" class="input-default" id="email" placeholder="Seu e-mail">
-            <input type="passqord" class="input-default" id="password" placeholder="Sua senha">
-            <select name="professionalLevel" id="leveSelect" class="input-default">
-                <option value="intern">Estagiário</option>
-                <option value="junior">Júnior</option>
-                <option value="mid">Pleno</option>
-                <option value="senior">Senior</option>
+            <input type="password" class="input-default" id="password" placeholder="Sua senha">
+            <select name="professionalLevel" id="levelSelect" class="input-default">
+                <option value="estágio">Estagiário</option>
+                <option value="júnior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="sênior">Senior</option>
             </select>
-            <button class="btn-primary-2">Cadastre-se</button>
-            <button class="btn-primary-1">Retornar</button>
+            <button class="btn-primary-2" id="registerBtn">Cadastre-se</button>
+            <a href="../../index.html" class="btn-primary-1">Retornar</a>
 
         </div>
     </main>
