@@ -7,6 +7,7 @@
     <meta name="author" content="Hugo Brito">
 
     <!-- Globals -->
+    <link rel="stylesheet" href="../../styles/dialog.css">
     <link rel="stylesheet" href="../../styles/buttons.css">
     <link rel="stylesheet" href="../../styles/colors.css">
     <link rel="stylesheet" href="../../styles/fonts.css">
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="../../styles/menu.css">
     <link rel="stylesheet" href="../../styles/position.css">
     <link rel="stylesheet" href="../../styles/logo.css">
-    <link rel="stylesheet" href="../../styles/dialog.css">
+    <link rel="stylesheet" href="../../styles/toasty.css">
     <!-- Page -->
     <link rel="stylesheet" href="./style.css">
 
@@ -31,7 +32,7 @@
             <div class="bgc-primary-transp"></div>
             <p class="font-16-700">Kenzie Empresas</p>
         </div>
-        <button class="btn-primary-1">Logout</button>
+        <button class="btn-primary-1" id="btnLogout">Logout</button>
     </header>
     <main class="">
         <section id="dpmts" class="container-desk">
@@ -39,15 +40,11 @@
                 <h2 class="font-32-700">Departamentos</h2>
                 <select name="selectCompany" id="selectCompany">
                     <option value="empresa1">selecionar empresa</option>
-                    <option value="empresa1">empresa1</option>
-                    <option value="empresa2">empresa2</option>
-                    <option value="empresa3">empresa3</option>
-                    <option value="empresa4">empresa4</option>
                 </select>
-                <button class="btn-primary-2">+ Criar</button>
+                <button class="btn-primary-2" id="newDpBtn">+ Criar</button>
             </div>
             <div id="dpmtsList">
-                <div id="dpmtCard">
+                <!-- <div id="dpmtCard">
                     <p class="font-20-700">Department Name</p>
                     <p class="font-18-400">Department Description</p>
                     <p class="font-18-400">Company Name</p>
@@ -56,50 +53,10 @@
                         <button class="btn-pen"></button>
                         <button class="btn-bin"></button>
                     </div>
-                </div>
-                <div id="dpmtCard">
-                    <p class="font-20-700">Department Name</p>
-                    <p class="font-18-400">Department Description</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-eye"></button>
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
-                <div id="dpmtCard">
-                    <p class="font-20-700">Department Name</p>
-                    <p class="font-18-400">Department Description</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-eye"></button>
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
-                <div id="dpmtCard">
-                    <p class="font-20-700">Department Name</p>
-                    <p class="font-18-400">Department Description</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-eye"></button>
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
-                <div id="dpmtCard">
-                    <p class="font-20-700">Department Name</p>
-                    <p class="font-18-400">Department Description</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-eye"></button>
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </section>
-        <section id="users" class="container-desk">
+        <section id="users" class="container-desk mb-1">
             <div id="usersTop">
                 <h2 class="font-32-700">Usuários Cadastrados</h2>
             </div>
@@ -113,45 +70,9 @@
                         <button class="btn-bin"></button>
                     </div>
                 </div>
-                <div id="userCard">
-                    <p class="font-20-700">Username</p>
-                    <p class="font-18-400">Pleno</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
-                <div id="userCard">
-                    <p class="font-20-700">Username</p>
-                    <p class="font-18-400">Pleno</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
-                <div id="userCard">
-                    <p class="font-20-700">Username</p>
-                    <p class="font-18-400">Pleno</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
-                <div id="userCard">
-                    <p class="font-20-700">Username</p>
-                    <p class="font-18-400">Pleno</p>
-                    <p class="font-18-400">Company Name</p>
-                    <div id="cardBtns">
-                        <button class="btn-pen"></button>
-                        <button class="btn-bin"></button>
-                    </div>
-                </div>
             </div>
         </section>
-        <dialog>
+        <dialog class="hide">
             <button class="btn-close"></button>
 
             <!-- MODAL VISUALIZAR DPTO -->

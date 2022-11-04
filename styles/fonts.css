@@ -16,6 +16,7 @@
 .font-28-700{
     font-size: var(--font-6);
     font-weight: var(--font-weight-7);
+    line-height: 150%;
 }
 
 .font-20-400{

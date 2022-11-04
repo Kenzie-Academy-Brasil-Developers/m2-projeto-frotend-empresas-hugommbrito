@@ -1,4 +1,3 @@
-✅⬜
 ✅   1 - Baixar Repositórios
 ✅       I - Da Aplicação e fundir o scaffold
 ✅       II - Da API e instalar no insomnia
@@ -51,37 +50,43 @@
 ✅       III - Em caso de erro, mostrar toasty com o retorno da API
 ✅       IV - Os dashboards devem encaminhar para o login caso não esteja logado
 ✅       V - Lógica para abrir menu sanduiche no mobile
-⬜   8 - Lógica Painel de Controle ADMINISTRADOR / Seção Departamentos
-⬜       I - Renderizar todos os departamentos (sem filtros) (request API)
-⬜       I - Formulário para cadastrar depto em uma empresa específica
-⬜           a - Toasty para indicar sucesso/erro
-⬜       II - Criar filtro para Listar todos os Departamentos de uma empresa específica (Request API)
-⬜       III - Botão de Visualizar Departamento
-⬜           a - Exibir dados: Funcionários, descrição, nome do dpto, empresa
-⬜               -- Funcionários devem conter Nome, Nível profissional e Tipo de trabalho
-⬜               -- Estilizar o Scroll
-⬜           b - Lógica para ADD funcionário ao Dpto (Request API)
-⬜               -- Renderizar apenas os que não foram contratados por nenhuma empresa/dpto
-⬜           c - Lógica para Remover funcionário ao Dpto (Request API)
-⬜       IV - Lógica para EDITAR Dpto (Request API)
-⬜           a - Abrir modal já preenchido com dados originais do dpto
-⬜       V - Lógica para DELETAR Dpto (Request API)
-⬜           a - Pop-up de confirmação
-⬜       VI - Ao clicar no botão de logout, remove as informações do usuário do localStorage e redireciona para a HomePage
-⬜   9 - Lógica Painel de Controle ADMINISTRADOR / Seção Usuários
-⬜       I - Lógica para alterar modalidade de trabalho (Request API)
-⬜           a - Home Office - Presencial - Híbrido
-⬜       II - Modificar Cargo (Request API)
-⬜           a - Estágio - Júnior - Pleno - Sênior
-⬜       III - Mostrar TODOS os usuários cadastrados na API (Request API)
-⬜           a - Mostrar dados dos usuários: username, email, cargo e modalidade de trabalho
-⬜           b - Caso a modalidade ou o cargo sejam nulos, não demostra o dado na tela.
-⬜   10 - Lógica painel de controle de USUÁRIO COMUM
-⬜       I - Mostrar APENAS Colegas de Empresa/Departamento (Request API)
-⬜       II - Alterar suas próprias informações (password, email e username)
-⬜       III - Mostrar mensagem quando não houver contratação
-⬜
-⬜
+✅   8 - Lógica Painel de Controle ADMINISTRADOR / Seção Departamentos
+✅       I - Renderizar todos os departamentos (sem filtros) (request API)
+✅       I - Formulário para cadastrar depto em uma empresa específica
+✅           a - Toasty para indicar sucesso/erro
+✅       II - Criar filtro para Listar todos os Departamentos de uma empresa específica (Request API)
+✅       III - Botão de Visualizar Departamento
+✅           a - Exibir dados: Funcionários, descrição, nome do dpto, empresa
+✅               -- Funcionários devem conter Nome, Nível profissional e Tipo de trabalho
+✅               -- Estilizar o Scroll
+✅           b - Lógica para ADD funcionário ao Dpto (Request API)
+✅               -- Renderizar apenas os que não foram contratados por nenhuma empresa/dpto
+✅           c - Lógica para Remover funcionário ao Dpto (Request API)
+✅       IV - Lógica para EDITAR Dpto (Request API)
+✅           a - Abrir modal já preenchido com dados originais do dpto
+✅       V - Lógica para DELETAR Dpto (Request API)
+✅           a - Pop-up de confirmação
+✅       VI - Ao clicar no botão de logout, remove as informações do usuário do localStorage e redireciona para a HomePage
+✅   9 - Lógica Painel de Controle ADMINISTRADOR / Seção Usuários
+✅       I - Lógica para alterar modalidade de trabalho (Request API)
+✅           a - Home Office - Presencial - Híbrido
+✅       II - Modificar Cargo (Request API)
+✅           a - Estágio - Júnior - Pleno - Sênior
+✅       III - Mostrar TODOS os usuários cadastrados na API (Request API)
+✅           a - Caso a modalidade ou o cargo sejam nulos, não demostra o dado na tela.
+✅       IV - Lógica para deletar usuário
+✅   10 - Lógica painel de controle de USUÁRIO COMUM
+✅       I - Mostrar APENAS Colegas de Empresa/Departamento (Request API)
+✅      II - Alterar suas próprias informações (password, email e username)
+✅       III - Mostrar mensagem quando não houver contratação
+✅       IV - Mostrar dados dos usuários: username, email, cargo e modalidade de trabalho
+✅          a - Caso a modalidade ou o cargo sejam nulos, não demostra o dado na tela.
+
+
+
+✅   00 - Botão de fechar modal
+⬜   00 - Modal Visualizar Dpto ADMIN - renderizar lista suspensa de funcionários após contratação/demissão
+⬜   00 - Modal Editar Dpto ADMIN - Estra crashando a API quando executado
 
 
 
