@@ -192,15 +192,18 @@ viewDpBtns.forEach(btn => {
         `)
 
         // RENDERIZAR FUNCIONÁRIOS SEM DPTO NA LISTA SUSPENSA
-        let employeeSelect = document.querySelector('#employeeSelect')
-        let employeeOutOfWork = await APIGetOutOfWork(token)
-
-        employeeOutOfWork.forEach(employee => {
-            employeeSelect.insertAdjacentHTML('beforeend', `
-                <option value="${employee.uuid}">${employee.username}</option>
-            `)
-        })
-
+        async function renderEmployeesSelectList(){
+            let employeeSelect = document.querySelector('#employeeSelect')
+            let employeeOutOfWork = await APIGetOutOfWork(token)
+            
+            employeeSelect.innerHTML = '<option value="">Selecione um usuário</option>'
+            employeeOutOfWork.forEach(employee => {
+                employeeSelect.insertAdjacentHTML('beforeend', `
+                    <option value="${employee.uuid}">${employee.username}</option>
+                `)
+            })
+        }
+        renderEmployeesSelectList()
 
         // RENDERIZAR FUNCIONÁRIOS DO DPTO NO CONTAINER
         async function renderEmployeesOfDp(){
@@ -214,7 +217,7 @@ viewDpBtns.forEach(btn => {
                     <div id="modalEditUserCard">
                         <p class="font-20-700">${employee.username}</p>
                         <p class="font-18-400">${employee.professional_level}</p>
-                        <p class="font-18-400">${employee.kind_of_work}</p>
+                        <p class="font-18-400">${employee.kind_of_work || ""}</p>
                         <button class="btn-red" id="${employee.uuid}">Desligar</button>
                     </div>
                 `)
@@ -240,6 +243,7 @@ viewDpBtns.forEach(btn => {
                 if(hireResponse.department_uuid){
                     toast('Sucesso!', 'Usuário devidamente CADASTRADO.')
                     renderEmployeesOfDp()
+                    renderEmployeesSelectList()
                 } else {
                     toast('Erro!', 'Algo não saiu como esperado, tente novamente mais tarde.')
                 }
@@ -261,6 +265,7 @@ viewDpBtns.forEach(btn => {
                         if(!fireResponse.department_uuid){
                             toast('Sucesso!', 'Usuário devidamente DESLIGADO.')
                             renderEmployeesOfDp()
+                            renderEmployeesSelectList()
                         } else {
                             toast('Erro!', fireResponse.error)
                         }
@@ -268,6 +273,7 @@ viewDpBtns.forEach(btn => {
                     } catch {
                         toast('Erro!', 'Algo não saiu como esperado, tente novamente mais tarde.')
                     }
+
                 })
             })
         }
@@ -303,8 +309,8 @@ function openEditDpModal(){
             
             let aplyEditBtn = document.querySelector('#aplyEditBtn')
             aplyEditBtn.addEventListener('click', async (e) => {
-                let editDpName = document.querySelector('#editDpName')
-                let editDpDescription = document.querySelector('#editDpDescription')
+                let editDpName = document.querySelector('#editDpName').value
+                let editDpDescription = document.querySelector('#editDpDescription').value
 
                 let editBody = {
                     name: editDpName,
@@ -314,7 +320,7 @@ function openEditDpModal(){
                 try{
                     let editResponse = await APIEditDp(token, selectedDpId, editBody)
                     if(editResponse.uuid){
-                        toast('Sucesso!', 'Usuário devidamente DESLIGADO.')
+                        toast('Sucesso!', 'Departamente devidamente EDITADO.')
                         renderAllDepartments()
                     } else {
                         toast('Erro!', editResponse.error)
@@ -391,23 +397,24 @@ function renderUsers(usersList){
     usersContainer.innerText = ""
 
     usersList.forEach(user => {
-        usersContainer.insertAdjacentHTML('beforeend', `
-            <div id="userCard">
-                <p class="font-20-700">${user.username}</p>
-                <p class="font-18-400">${user.professional_level || ""}</p>
-                <p class="font-18-400">${user.kind_of_work || ""}</p>
-                <div id="cardBtns">
-                    <button class="btn-pen btn-edt-user" id="${user.uuid}"></button>
-                    <button class="btn-bin btn-del-user" id="${user.uuid}"></button>
+        if(!user.is_admin){
+            usersContainer.insertAdjacentHTML('beforeend', `
+                <div id="userCard">
+                    <p class="font-20-700">${user.username}</p>
+                    <p class="font-18-400">${user.professional_level || ""}</p>
+                    <p class="font-18-400">${user.kind_of_work || ""}</p>
+                    <div id="cardBtns">
+                        <button class="btn-pen btn-edt-user" id="${user.uuid}"></button>
+                        <button class="btn-bin btn-del-user" id="${user.uuid}"></button>
+                    </div>
                 </div>
-            </div>
-        `)
+            `)
+        }
     })
 
     editUser()
     deleteUser()
 }
-
 
 async function renderAllUsers() {
     let token = localStorage.getItem('token')

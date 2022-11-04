@@ -128,3 +128,9 @@ dialog > .btn-primary-2{
 #modalConfirmDeletDpmt > .font-28-700{
     text-align: center;
 }
+
+#ModalEditUserSelect{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

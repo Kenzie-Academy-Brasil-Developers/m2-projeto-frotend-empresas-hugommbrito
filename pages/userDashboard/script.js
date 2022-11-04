@@ -3,8 +3,9 @@ import { toast } from "../../scripts/toasty.js";
 
 function checkToken(){
     const loginToken = localStorage.getItem("token");
-
-    (!loginToken) ? window.location.replace('../login/index.html') : ""
+    const isAdmin = localStorage.getItem("admin");
+    
+    (loginToken && (isAdmin == 'false')) ? "" : window.location.replace('../login/index.html') ;
 }
 checkToken()
 
@@ -85,8 +86,8 @@ function editUserInfo(userInformation) {
         dialog.insertAdjacentHTML('beforeend', `
             <button class="btn-close"></button>
             <h2 class="font-40-700">Editar Perfil</h2>
-            <input type="text" class="input-default" id="editUserName" value="${userInformation.username}">
-            <input type="email" class="input-default" id="editUserEmail" value="${userInformation.email}">
+            <input type="text" class="input-default" id="editUserName" value="${userInformation.username}" placeholder="Seu nome">
+            <input type="email" class="input-default" id="editUserEmail" value="${userInformation.email}" placeholder="Seu email">
             <input type="password" class="input-default" id="editUserPassword" placeholder="Sua senha" required>
             <button class="btn-primary-2" id="confirmEditUser">Editar Perfil</button>
         `)
